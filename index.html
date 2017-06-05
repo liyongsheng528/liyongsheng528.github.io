@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
+<audio controls id="audio" src="music/幸福的错觉.mp3" style="display: none"></audio>
 <div class="nav-wrapper">
    <div class="blank"></div>
    <div class="nav-box">
@@ -16,7 +17,13 @@
            <div class="left"></div>
            <div class="icon"></div>
            <div class="right">
-               <div class="img"><img width="9" height="11" src="images/sanjiao.png" alt=""></div>
+               <div class="img">
+                   <img width="9" height="11" src="images/sanjiao.png" alt="">
+                   <div class="play">
+                      <span></span>
+                      <span></span>
+                   </div>
+               </div>
                <ul class="nav">
                    <li class="active">永胜首页 <b></b></li>
                    <li>个人信息 <b></b></li>
@@ -36,8 +43,8 @@
 
    </div>
 </div>
-
-<div class="main-wrapper">
+<!--首页-->
+<div class="main-wrapper floor">
     <div class="bottom">
         <b class="left"></b>
         <div class="avatar"></div>
@@ -46,35 +53,92 @@
     <div class="main-content"></div>
 </div>
 
-<div class="main2-wrapper">
+<!--个人信息-->
+<div class="main2-wrapper floor">
     <div class="content">
       <div class="top">
           <div class="left"><b></b></div>
           <div class="right">+&nbsp;2017</div>
       </div>
-      <div class="xinxi"></div>
+      <div class="xinxi">
+          <img src="images/defaut.png" alt="">
+          <ul>
+              <li class="one"></li>
+              <li class="two"></li>
+              <li class="three"></li>
+              <li class="four"></li>
+          </ul>
+      </div>
       <div class="more">MORE+</div>
-       <ul>
+      <ul class="link">
            <li><a href="javascript:;">ONE+</a></li>
            <li><a href="javascript:;">TWO+</a></li>
            <li><a href="javascript:;">THREE+</a></li>
            <li><a href="javascript:;">FOUR+</a></li>
-
-       </ul>
+      </ul>
     </div>
 </div>
 
-<div class="main3-wrapper">
+<!--工作经历-->
+<div class="main3-wrapper floor">
     <div class="xinxi"></div>
-    <div class="map"></div>
+    <div class="map">
+        <div class="title"><span class="time">1年半</span><div class="address"><div class="line"></div>安豆科技有限公司 <span class="wai">（外包）</span><span class="dian"></span>太原</div>
+
+            <div class="jobs">设计师</div>
+            <div class="position"></div>
+            <span class="point"></span>
+        </div>
+        <div class="title t2">
+            <span class="time">1年</span><div class="address"><div class="line"></div>可丽尔医疗科技有限公司 <span class="wai">（创业）</span><span class="dian"></span>上海</div>
+            <div class="jobs">产品经理</div>
+            <div class="position"></div>
+            <span class="point"></span>
+        </div>
+    </div>
     <div class="more">MORE+</div>
     <div class="xinxi xinxi1"></div>
 </div>
 
-<div class="main4-wrapper">
-
+<!--作品集锦-->
+<div class="main4-wrapper floor clear">
+  <div class="head clear">
+      <div class="left"></div>
+      <ul class="right">
+          <li class="active" data="andou"><p class="ch">安豆</p><p class="en">ANDOU</p></li>
+          <li data="clear"><p class="ch">可丽尔</p><p class="en">DR.CLEAR ALIGNER</p></li>
+      </ul>
+  </div>
+  <div class="contain clear">
+      <ul class="project">
+          <li class="app active" data="andou">
+              <div class="title">项目列表</div>
+              <img src="images/app.png" alt="">
+              <div class="name">APP</div>
+              <span>+</span>
+          </li>
+          <li class="web" data="andou">
+              <div class="title">项目列表</div>
+              <img src="images/web.png" alt="">
+              <div class="name">WEB</div>
+              <span>+</span>
+          </li>
+          <li class="other" data="andou">
+              <div class="title">项目列表</div>
+              <img src="images/other.png" alt="">
+              <div class="name">OTHER</div>
+              <span>+</span>
+          </li>
+      </ul>
+      <ul class="result">
+          <li><img src="images/andou-app.jpg" alt=""></li>
+      </ul>
+  </div>
+   <div class="more">MORE+</div>
 </div>
-<div class="main5-wrapper">
+
+<!--学生时代-->
+<div class="main5-wrapper floor">
   <div class="dash-box">
       <span class="left"></span>
       <span class="right"></span>
@@ -88,12 +152,31 @@
       <b class="right"></b>
   </div>
   <ul class="link">
+      <li class="d-3">
+          <div class="mask p1">
+              <p>2013&nbsp;/&nbsp;10</p>
+          </div>
+          <b></b>
+      </li>
+      <li class="d-3">
+          <div class="p2">
+             <div class="content">
+                 <p class="title">攀岩课（选修课）</p>
+                 <p class="title2">STRONG</p>
+                 <P class="title3">ROCK CLIMBING</P>
+                 <P class="title4">它教会了我坚持就是胜利，希望还有机会去做这件事！</P>
+                 <P class="title5">It taught me adhere to is victory, hope have a
+                     chance to do it!</P>
+             </div>
+          </div>
+      </li>
+      <li class="d-3"><div class="mask p1"><p>2014&nbsp;/&nbsp;10</p></div><b></b></li>
       <li class="d-3"></li>
+      <li class="d-6"><div class="mask p1"><p>2015&nbsp;/&nbsp;10</p></div> <b></b></li>
       <li class="d-3"></li>
-      <li class="d-3"></li>
-      <li class="d-3"></li>
-      <li class="d-6"></li>
-      <li class="d-3"></li>
+      <li class="d-3 more-box">
+          <div class="more">MORE+</div>
+      </li>
   </ul>
 </div>
 
@@ -122,7 +205,8 @@
 
 </div>
 
-<div class="footer-wrapper">
+<!--底部-->
+<footer class="footer-wrapper">
     <div class="footer">
         <div class="split"></div>
         <p>时代向前发展，并不一定就代表文明的进步。我们的立足之处，是过去与未来的夹缝之间。</p>
@@ -130,7 +214,7 @@
         <p> 如果能够把眼光放得足够长远，在我们的身后，</p>
         <p>或许也一样隐藏着创造的源泉。</p>
     </div>
-</div>
+</footer>
 </body>
 <script src="js/jquery.js"></script>
 <script src="js/index.js"></script>
